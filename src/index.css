@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active{
+    @apply text-green-500 font-bold
+}
+.product .btn{
+    transition: transform 1s , opacity 1s;
+    opacity: 0;
+    transform: translateY(30%) ;
+}
+.product:hover .btn{
+    transition: transform 1s , opacity 1s;
+    opacity: 1;
+    transform: translateY(-30%) ;
+}
